@@ -1,7 +1,7 @@
 # Make will use bash instead of sh
 SHELL := /usr/bin/env bash
 
-IMAGES = docker kubectl helm build-env ci-env
+IMAGES = docker kubectl helm build-env ci-env runtime-env
 DOCKER_REPO := grabpress
 DOCKER_TAG := latest
 
