@@ -23,11 +23,8 @@ RUN curl -L https://yarnpkg.com/downloads/${YARN_VERSION}/yarn-v${YARN_VERSION}.
     mv /tmp/yarn-v"${YARN_VERSION}"/ /opt/yarn && \
     yarn --version
 
-ENV HOME="/opt/app" \
-    LANG="en_US.UTF-8" \
+ENV LANG="en_US.UTF-8" \
     LC_ALL="en_US.utf-8"
-
-WORKDIR $HOME
 
 RUN mix local.hex --force && \
     mix local.rebar --force

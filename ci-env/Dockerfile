@@ -18,6 +18,8 @@ RUN apk add --no-cache \
     py-crcmod \
     py3-pip
 
+WORKDIR /root
+
 ENV PATH /google-cloud-sdk/bin:$PATH
 
 ENV GOOGLE_APPLICATION_CREDENTIALS="/root/.google_sa_key.json"
