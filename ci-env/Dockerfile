@@ -20,6 +20,8 @@ RUN apk add --no-cache \
 
 ENV PATH /google-cloud-sdk/bin:$PATH
 
+ENV GOOGLE_APPLICATION_CREDENTIALS="/root/.google_sa_key.json"
+
 RUN ln -s /lib /lib64
 
 ENV DOCKER_COMPOSE_VERSION 1.18.0
