@@ -24,7 +24,7 @@ ENV GOOGLE_APPLICATION_CREDENTIALS="/root/.google_sa_key.json"
 
 RUN ln -s /lib /lib64
 
-ENV DOCKER_COMPOSE_VERSION 1.18.0
+ENV DOCKER_COMPOSE_VERSION="1.18.0"
 
 RUN pip3 install docker-compose==${DOCKER_COMPOSE_VERSION}
 
