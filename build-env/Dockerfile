@@ -1,4 +1,4 @@
-FROM elixir:1.7.3-alpine
+FROM elixir:1.7.4-alpine
 
 RUN apk add --no-cache \
     bash \
@@ -24,7 +24,8 @@ RUN curl -L https://yarnpkg.com/downloads/${YARN_VERSION}/yarn-v${YARN_VERSION}.
     yarn --version
 
 ENV LANG="en_US.UTF-8" \
-    LC_ALL="en_US.utf-8"
+    LC_ALL="en_US.utf-8" \
+    TERM="xterm-256color"
 
 RUN mix local.hex --force && \
     mix local.rebar --force
