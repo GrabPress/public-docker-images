@@ -8,7 +8,9 @@ RUN apk add --no-cache \
     curl \
     inotify-tools \
     nodejs \
-    openssh-client
+    openssh-client \
+    autoconf \
+    automake
 
 RUN mkdir /opt
 
